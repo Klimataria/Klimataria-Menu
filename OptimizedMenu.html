@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klimataria - Menu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f2e7;
+            background-image: url('subtle-paper-texture.jpg'); /* Soft paper texture */
+            color: #2e5e33;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-image: linear-gradient(rgba(224, 216, 176, 0.9), rgba(224, 216, 176, 0.9)), url('pattern-background.jpg');
+            background-size: cover;
+            color: #2e5e33;
+        }
+        
+        .header-title {
+    font-family: 'Dancing Script', cursive; /* Elegant calligraphic font */
+    font-size: 4.5rem; /* Larger for emphasis */
+    color: #2e5e33; /* Keep the original deep green */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+    letter-spacing: 2px; /* Slightly spaced for elegance */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 10px 30px; /* Padding inside the border */
+    position: relative;
+
+    /* Decorative 3D border */
+    display: inline-block;
+    border: 2px solid #2e5e33; /* Outer solid border */
+    border-radius: 20px; /* Softer, rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.5); /* Depth with outer and inner shadows */
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)); /* Subtle glowing gradient */
+       }
+
+/* Decorative flourish before and after the title */
+.header-title::before, .header-title::after {
+    content: "❦"; /* Calligraphic flourish */
+    font-size: 4rem;
+    color: #2e5e33;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+      }
+
+.header-title::before {
+    left: -50px; /* Position to the left */
+      }
+
+.header-title::after {
+    right: -50px; /* Position to the right */
+      }
+
+
+        header img {
+            max-width: 250px;
+            border-radius: 50%; /* Circular logo for a vintage look */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: #2e5e33;
+            margin: 10px 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-section {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            background-image: url('subtle-wood-texture.jpg');
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .menu-section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        h2, h3 {
+            text-align: center;
+            color: #2e5e33;
+            font-family: 'Playfair Display', serif;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #2e5e33;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .menu-item {
+            font-size: 1.1rem;
+            position: relative;
+            padding: 15px 20px;
+            background-color: #faf8ef;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease-in-out, transform 0.2s;
+        }
+
+        .menu-item:hover {
+            background-color: #e0d8b0;
+            transform: translateY(-3px);
+        }
+
+        .menu-section h2::before {
+            content: '🍴 ';
+            font-size: 1.5rem;
+            color: #2e5e33;
+            margin-right: 5px;
+        }
+
+        .price {
+            float: right;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e0d8b0;
+            color: #2e5e33;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="header-title">Klimataria-Menu</h1>
+</header>
+
+<div class="menu-section">
+    <h2>Ψητά της Ώρας / Grill Specialties</h2>
+    <div class="menu-items">
+        <div class="menu-item">Σουτσουκάκια / Soutzoukakia<span class="price">8€</span></div>
+        <div class="menu-item">Μπιφτέκι / Bifteki<span class="price">8€</span></div>
+        <div class="menu-item">Φιλέτο Μοσχαρίσιο / Beef Fillet<span class="price">16€</span></div>
+        <div class="menu-item">Συκώτι Μοσχαρίσιο / Beef Liver<span class="price">16€</span></div>
+        <div class="menu-item">Μπριζόλα Μοσχαρίσια / Beef Steak<span class="price">16€</span></div>
+        <div class="menu-item">Πανσέτα Χοιρινή / Pork Belly<span class="price">8€</span></div>
+        <div class="menu-item">Μπριζόλα Χοιρινή / Pork Steak<span class="price">8€</span></div>
+        <div class="menu-item">Σουβλάκι Χοιρινό / Pork Souvlaki<span class="price">8€</span></div>
+        <div class="menu-item">Σουβλάκι Κοτόπουλο / Chicken Souvlaki<span class="price">8€</span></div>
+        <div class="menu-item">Σνίτσελ / Schnitzel<span class="price">8€</span></div>
+        <div class="menu-item">Λουκάνικο Χωριάτικο / Village Sausage<span class="price">8€</span></div>
+        <div class="menu-item">Μανιτάρια / Mushrooms<span class="price">5€</span></div>
+    </div>
+</div>
+
+<div class="menu-section">
+    <h2>Ορεκτικά / Appetizers</h2>
+    <div class="menu-items">
+        <div class="menu-item">Πατάτες Τηγανητές / Fried Potatoes<span class="price">3€</span></div>
+        <div class="menu-item">Κολοκυθάκια / Fried Zucchini<span class="price">4€</span></div>
+        <div class="menu-item">Κασεροκροκέτες / Cheese Croquettes<span class="price">4€</span></div>
+        <div class="menu-item">Φέτα / Feta Cheese<span class="price">3.50€</span></div>
+        <div class="menu-item">Τζατζίκι / Tzatziki<span class="price">3€</span></div>
+        <div class="menu-item">Τυροσαλάτα / Cheese Salad<span class="price">3€</span></div>
+        <div class="menu-item">Μελιτζάνα Ψητή / Grilled Eggplant<span class="price">4€</span></div>
+        <div class="menu-item">Ντομάτα Ψητή / Grilled Tomato<span class="price">3.50€</span></div>
+        <div class="menu-item">Μπουγιουρντί / Bougiourdi<span class="price">5€</span></div>
+        <div class="menu-item">Σκουμπρί Αλμυρό / Salted Mackerel<span class="price">5€</span></div>
+        <div class="menu-item">Καυτερή / Spicy Cheese Dip<span class="price">3€</span></div>
+    </div>
+</div>
+
+<div class="menu-section">
+    <h2>Σαλάτες / Salads</h2>
+    <div class="menu-items">
+        <div class="menu-item">Αγγουροντομάτα / Cucumber & Tomato<span class="price">3.50€</span></div>
+        <div class="menu-item">Χωριάτικη / Greek Salad<span class="price">6€</span></div>
+        <div class="menu-item">Πικάντικη / Spicy Salad<span class="price">3.50€</span></div>
+        <div class="menu-item">Μαρούλι Ρόκα / Lettuce & Rocket<span class="price">3.50€</span></div>
+        <div class="menu-item">Φλωρίνης Απλή / Simple Florina Pepper<span class="price">4€</span></div>
+        <div class="menu-item">Φλωρίνης Γεμιστή / Stuffed Florina Pepper<span class="price">5€</span></div>
+    </div>
+</div>
+
+<div class="menu-section">
+    <h2>Ποτά / Drinks</h2>
+    
+    <h3>Κρασιά / Wines</h3>
+    <div class="menu-items">
+        <div class="menu-item">Κρασί Ροζέ / Rosé Wine Bottle<span class="price">15€</span></div>
+        <div class="menu-item">Θέμα Λευκό / Thema White Wine<span class="price">20€</span></div>
+        <div class="menu-item">Θέμα Κόκκινο / Thema Red Wine<span class="price">25€</span></div>
+    </div>
+
+    <h3>Τσίπουρα / Tsipouro</h3>
+    <div class="menu-items">
+        <div class="menu-item">Ηδωνικό Τσίπουρο / Idoniko Tsipouro<span class="price">8€</span></div>
+        <div class="menu-item">Μάνγκους Τσίπουρο / Mangous Tsipouro<span class="price">8€</span></div>
+        <div class="menu-item">Ζωπυρό Τσίπουρο / Zopiro Tsipouro<span class="price">8€</span></div>
+    </div>
+
+    <h3>Ρετσίνες / Retsina</h3>
+    <div class="menu-items">
+        <div class="menu-item">Βασιλική Ρετσίνα / Vasiliki Retsina<span class="price">4€</span></div>
+        <div class="menu-item">Βαρελάκι Ρετσίνα / Barrel Retsina<span class="price">4€</span></div>
+    </div>
+
+    <h3>Ούζο / Ouzo</h3>
+    <div class="menu-items">
+        <div class="menu-item">Ούζο Πλωμαρίου / Ouzo Plomari<span class="price">7€</span></div>
+    </div>
+
+    <h3>Μπύρες / Beers</h3>
+    <div class="menu-items">
+        <div class="menu-item">Amstel<span class="price">3.50€</span></div>
+        <div class="menu-item">Βεργίνα / Vergina<span class="price">3.50€</span></div>
+        <div class="menu-item">Kaiser<span class="price">3.50€</span></div>
+        <div class="menu-item">Άλφα / Alpha<span class="price">3.50€</span></div>
+        <div class="menu-item">Heineken<span class="price">3.50€</span></div>
+        <div class="menu-item">Radler<span class="price">3.50€</span></div>
+        <div class="menu-item">Heineken Free<span class="price">3.50€</span></div>
+    </div>
+
+    <h3>Αναψυκτικά / Soft Drinks</h3>
+    <div class="menu-items">
+        <div class="menu-item">Coca Cola<span class="price">2€</span></div>
+        <div class="menu-item">Coca Cola Zero<span class="price">2€</span></div>
+        <div class="menu-item">Πορτοκαλάδα / Orange Soda<span class="price">2€</span></div>
+        <div class="menu-item">Λεμονάδα / Lemonade<span class="price">2€</span></div>
+        <div class="menu-item">Σουρωτή / Sour Water<span class="price">2€</span></div>
+        <div class="menu-item">Sprite<span class="price">2€</span></div>
+        <div class="menu-item">Χυμό Βύσσινο / Cherry Juice<span class="price">2€</span></div>
+        <div class="menu-item">Πορτοκαλάδα Χωρίς Ανθρακικό / Flat Orange Juice<span class="price">2€</span></div>
+    </div>
+</div>
+
+<footer>
+    <p>Taverna Klimataria © 2024</p>
+</footer>
+
+</body>
+</html>
